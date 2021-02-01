@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to my Person Website"
+title:  "Welcome to my Personal Website"
 ---
 
 # Welcome
