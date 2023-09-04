@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://sbsigur.com/</loc> <!-- Replace with your GitHub Pages URL -->
+        <lastmod>2023-09-04</lastmod> <!-- Replace with the last modified date -->
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+</urlset>
