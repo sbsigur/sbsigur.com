@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <title>Resume - Sævar Bergur Sigurgeirsson</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R6BE1R2XS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -14,43 +15,113 @@
         }
 
         gtag('js', new Date());
-        gtag('config', 'G-M4FH87DSSG');
+
+        gtag('config', 'G-5R6BE1R2XS');
     </script>
 </head>
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
-<main>
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Welcome to my personal website. I am a software developer.</p>
-    </section>
+<div class="container">
+    <!-- Your Name -->
+    <h1>Sævar Bergur Sigurgeirsson</h1>
 
-    <section id="projects">
-        <h1>Projects</h1>
-        <p>I have worked on several projects, from web development to machine learning.</p>
-    </section>
+    <!-- Contact Details -->
+    <div class="contact-details">
+        <div>
+            <a href="https://www.linkedin.com/in/sbsigur/">LinkedIn</a> |
+            Email: <a href="mailto:sbsigur@icloud.com">sbsigur@icloud.com</a> |
+            Mobile: +354 612 2779 |
+            Location: Garðabær, Capital Region, Iceland
+        </div>
+    </div>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>You can contact me at <a href="mailto:sbsigur@icloud.com">sbsigur@icloud.com</a>.</p>
-    </section>
-</main>
+    <!-- Summary -->
+    <h2>Summary</h2>
+    <p>
+        My career began in Denmark where I worked as a software developer. Having dual citizenship, I made the decision
+        to relocate to Iceland after an absence spanning several years. Since then I have worked in various countries
+        and encountered unique challenges in each of them. In the past couple of years I have been exposed to areas of
+        machine learning and the cyber security spectrum. I have gained diverse experience, including deep learning,
+        internal system development, and a mission to establish top-notch internet security for the cloud era.
+    </p>
 
-<footer>
-    <p>&copy; 2023 sbsigur.com</p>
-</footer>
+    <!-- Skills -->
+    <h2>Experience, Tools & Skills</h2>
+    <div class="skills">
+        <p><strong>5+ years:</strong> Software Development, Software Testing</p>
+        <p><strong>2+ years:</strong> Consulting, Big Data, Data Pipeline, Data Science, Machine Learning, Deep Learning
+        </p>
+        <div class="technical-proficiency">
+            <strong>Technical Proficiency</strong>
+            <p>Python, Java, Amazon Web Services (AWS), Shell Scripting (bash, zsh), Linux, Unix, Tmux, macOS, GitLab,
+                GitHub, Automation, Docker, Containerization, Container Orchestration (k8s, k9s), Remote Machines, Red
+                Hat OpenShift.</p>
+        </div>
+    </div>
 
+
+    <!-- Experience -->
+    <h2>Professional Experience</h2>
+    <ul class="experience">
+        <li class="experience-item">
+            <div class="experience-header">
+                <div class="job-info">
+                    <div class="job-title">Software Developer</div>
+                    <div class="job-company">Opin kerfi hf.</div>
+                </div>
+                <div class="job-details">
+                    <div class="job-year">2023 -</div>
+                    <div class="job-location">Reykjavik, Capital Region, Iceland</div>
+                </div>
+            </div>
+        <li>
+        </li>
+    </ul>
+    <span class="bleudefrance">[PHP, TypeScript, NGINX, Docker, Kubernetes, Ninety, MariaDB, Laravel, Asana, Angular, PHPStorm, GitHub]</span>
+    </li>
+    <!-- Add more experience items here using the format above -->
+    </ul>
+
+    <!-- Education -->
+    <h2>Education</h2>
+    <ul class="education">
+        <li class="education-item">
+            <div class="education-header">
+                <div class="education-info">
+                    <div class="education-degree">Business Bachelor in Software Development</div>
+                    <div class="education-institution">UCN</div>
+                </div>
+                <div class="education-details">
+                    <div class="education-city">Aalborg, Nordjylland, Denmark</div>
+                    <div class="education-year">2020</div>
+                </div>
+            </div>
+        </li>
+        <li class="education-item">
+            <div class="education-header">
+                <div class="education-info">
+                    <div class="education-degree">AP Graduate in Computer Science</div>
+                    <div class="education-institution">UCN</div>
+                </div>
+                <div class="education-details">
+                    <div class="education-city">Aalborg, Nordjylland, Denmark</div>
+                    <div class="education-year">2017-2020</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <!-- Languages -->
+    <h2>Languages</h2>
+    <div class="languages">
+        <p>Danish: Native or bilingual proficiency</p>
+        <p>English: Native or bilingual proficiency</p>
+        <p>Icelandic: Professional working proficiency</p>
+        <p>German: Limited working proficiency</p>
+    </div>
+</div>
 <script src="script.js"></script>
-
 </body>
 </html>
