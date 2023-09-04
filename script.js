@@ -1,3 +1,15 @@
-function changeColor() {
-    document.body.style.backgroundColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const quoteButton = document.getElementById("quoteButton");
+    const quoteText = document.getElementById("quoteText");
+
+    const fetchQuote = async () => {
+        const response = await fetch('https://api.quotable.io/random');
+        const data = await response.json();
+        return `${data.content} —${data.author}`;
+    };
+
+    quoteButton.addEventListener("click", async function() {
+        const quote = await fetchQuote();
+        quoteText.textContent = quote;
+    });
+});
