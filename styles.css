@@ -81,10 +81,18 @@ h2.dark-mode {
 }
 
 #darkModeToggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
+    font-size: 18px;
+    padding: 10px 30px;
+    width: auto;
+    max-width: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #ddd;
+    border: none;
+    text-align: center;
+    color: black;
+    position: relative;
+    display: inline-block;
 }
 
 .contact-details a {
