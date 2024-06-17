@@ -1,50 +1,43 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 1in;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
-}
-
-h2 {
-    color: blue;
-    border-bottom: 1px solid black;
-    text-align: left;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style: none;
     margin: 0;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 0.5em;
+    padding: 0.5em 0;
 }
 
 .contact-details {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .contact-details a {
-    text-decoration: underline;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #0077b5;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
 }
 
-.skills, .experience, .education, .languages {
-    margin-top: 1em;
-    text-align: justify;
+.contact-details a:hover {
+    color: #005582;
 }
 
-.experience-item, .education-item {
-    margin-bottom: 1em;
-}
-
-.bleudefrance {
-    color: rgb(48, 140, 232);
+.contact-details i {
+    margin-right: 10px;
+    font-size: 1.5em;
 }
 
 body.dark-mode {
@@ -52,112 +45,55 @@ body.dark-mode {
     color: #ffffff;
 }
 
-h1.dark-mode {
+.dark-mode-toggle {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0077b5;
+    border: none;
     color: #ffffff;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-h2.dark-mode {
-    border-bottom: 1px solid #ffffff;
+.dark-mode-toggle:hover {
+    background-color: #005582;
+}
+
+.dark-mode .dark-mode-toggle {
+    background-color: #ffffff;
+    color: #0077b5;
 }
 
 .container {
-    max-width: 794px;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 90%;
     margin: auto;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 0.5in;
+.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
     }
 
-    .container {
-        padding: 0 20px;
+    .contact-details a {
+        font-size: 1em;
     }
 
-    .contact-details {
-        flex-direction: column;
-        align-items: flex-start;
+    .dark-mode-toggle {
+        font-size: 16px;
+        padding: 8px 16px;
     }
-}
-
-#darkModeToggle {
-    font-size: 18px;
-    padding: 10px 30px;
-    width: auto;
-    max-width: 100px;
-    border-radius: 50px;
-    overflow: hidden;
-    background-color: #ddd;
-    border: none;
-    text-align: center;
-    color: black;
-    position: relative;
-    display: inline-block;
-}
-
-.contact-details a {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
-}
-
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.job-info, .job-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.job-title {
-    font-weight: bold;
-}
-
-.job-company, .job-year, .job-location {
-    font-weight: normal;
-}
-
-.job-details {
-    font-style: italic;
-    text-align: right;
-}
-
-.technical-proficiency strong {
-    display: block;
-    margin-bottom: 0.1em;
-}
-
-.technical-proficiency p {
-    margin-top: 0;
-}
-
-.education-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.education-info, .education-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.education-degree {
-    font-weight: bold;
-}
-
-.education-institution, .education-city, .education-year {
-    font-weight: normal;
-}
-
-.education-details {
-    font-style: italic;
-    text-align: right;
-}
-
-p {
-    text-align: justify;
 }
